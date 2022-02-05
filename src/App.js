@@ -1,15 +1,8 @@
-import { Skeleton } from "sai-ui";
+import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
     <div className="">
-      <Skeleton variant={"text"} />
-      <Skeleton
-        variant={"rectangle"}
-        customStyles={{
-          width: "10rem",
-          height: "10rem",
-        }}
-      />
+      <Navbar />
     </div>
   );
 }
