@@ -10,11 +10,11 @@ const Installation = () => {
       </p>
 
       <h2 className="mt-4 text-2xl font-semibold">npm</h2>
-      <div className="mt-3 bg-[#001E3C] text-white rounded-lg p-3 w-96 py-4 text-lg">
+      <div className="mt-3 bg-[#001E3C] text-white rounded-lg p-3 w-96 max-w-full py-4 text-lg">
         npm install sai-ui
       </div>
       <h2 className="mt-4 text-2xl font-semibold">yarn</h2>
-      <div className="mt-3 bg-[#001E3C] text-white rounded-lg p-3 w-96 py-4 text-lg">
+      <div className="mt-3 bg-[#001E3C] text-white rounded-lg p-3 w-96 max-w-full py-4 text-lg">
         yarn add sai-ui
       </div>
       <h2 className="text-2xl font-bold mt-8">About</h2>
