@@ -7,7 +7,7 @@ const SkeletonCustomLayouts = () => {
       <h2 className="text-2xl font-bold mt-5">Custom Layouts</h2>
       <div className="p-4">
         <Layout1 />
-        {/* <Layout2 /> */}
+        <Layout2 />
       </div>
     </div>
   );

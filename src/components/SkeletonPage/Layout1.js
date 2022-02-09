@@ -4,15 +4,16 @@ import { CopyBlock, tomorrowNightBlue } from "react-code-blocks";
 import { skeletonLayout1 } from "./SkeletonCode";
 const Layout1 = () => {
   return (
-    <div className={`grid lg:grid-cols-2 gap-4 justify-between`}>
+    <div className={`grid lg:grid-cols-2 gap-4 `}>
       <div className="flex flex-col gap-3 w-full justify-center ">
         <div className="flex flex-col gap-3 m-auto">
           <Skeleton
             variant={"rectangle"}
             customStyles={{
-              width: "20rem",
+              // width: "20rem",
               height: "17rem",
             }}
+            customClasses={"w-full lg:w-[20rem]"}
           />
           <Skeleton
             variant={"text"}
