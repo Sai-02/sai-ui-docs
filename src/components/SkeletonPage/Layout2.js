@@ -4,7 +4,7 @@ import { CopyBlock, tomorrowNightBlue } from "react-code-blocks";
 import { skeletonLayout2 } from "./SkeletonCode";
 const Layout2 = () => {
   return (
-    <div className={`grid lg:grid-cols-2 gap-4 mt-10 p-4 `}>
+    <div className={`grid lg:grid-cols-2 gap-4 mt-10 pt-4`}>
       <div className="flex flex-col gap-3 w-full justify-center ">
         <div className="flex flex-col gap-3 m-auto">
           <div className="flex gap-2 ">
