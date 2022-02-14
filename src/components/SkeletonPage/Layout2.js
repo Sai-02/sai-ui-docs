@@ -11,18 +11,14 @@ const Layout2 = () => {
             <div className="">
               <Skeleton variant={"circle"} width={"6"} height={"6"} />
             </div>
-            <div className=" flex flex-col h-full gap-2 mt-2">
+            <div className=" flex flex-col h-full gap-2 mt-2 w-full overflow-auto">
               <Skeleton
                 variant={"text"}
-                customStyles={{
-                  width: "15rem",
-                }}
+                customClasses={"w-[12rem] sm:w-[15rem]"}
               />
               <Skeleton
                 variant={"text"}
-                customStyles={{
-                  width: "15rem",
-                }}
+                customClasses={"w-[12rem] sm:w-[15rem]"}
               />
               <Skeleton
                 variant={"text"}
