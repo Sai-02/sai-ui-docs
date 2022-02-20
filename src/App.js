@@ -17,7 +17,7 @@ function App() {
         <Header setShouldOpenNavbar={setShouldOpenNavbar} />
         <div className="grid lg:grid-cols-12">
           <div
-            className={`absolute z-10  bg-white w-[40%] lg:w-full lg:static lg:col-span-2 border h-screen ${
+            className={`absolute z-10  bg-white w-[40%] lg:w-full lg:static lg:col-span-2 border min-h-screen h-full ${
               shouldOpenNavbar ? "" : "hidden"
             } lg:block`}
           >
