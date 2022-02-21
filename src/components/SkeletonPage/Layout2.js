@@ -30,14 +30,14 @@ const Layout2 = () => {
           </div>
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full overflow-auto h-[24rem]">
         <CopyBlock
           text={skeletonLayout2}
           language={"jsx"}
           theme={tomorrowNightBlue}
           customStyle={{
-            height: "24rem",
-            overflow: "auto",
+            width: "max-content",
+            minWidth: "100%",
           }}
         />
       </div>
