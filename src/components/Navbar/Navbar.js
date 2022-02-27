@@ -57,6 +57,22 @@ const Navbar = ({ setShouldOpenNavbar }) => {
           </span>
         </Link>
       </div>
+      <div
+        className={`text-[#3E5060] font-bold ${
+          location.pathname == "/modal" ? "text-[#0072E5]" : ""
+        }`}
+      >
+        <Link to="/modal">
+          <span
+            className=""
+            onClick={() => {
+              closeNavbar();
+            }}
+          >
+            Modal
+          </span>
+        </Link>
+      </div>
     </nav>
   );
 };
