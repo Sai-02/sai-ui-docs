@@ -10,7 +10,7 @@ const Navbar = ({ setShouldOpenNavbar }) => {
   };
   return (
     <nav className="py-4  w-full flex items-center justify-center flex-col gap-4 ">
-      <div className="flex items-center lg:hidden flex-row-reverse w-full px-4 cursor-pointer">
+      <div className="flex items-center lg:hidden flex-row-reverse w-full px-4 cursor-pointer ">
         <div
           className="cursor-pointer"
           onClick={() => {
@@ -26,8 +26,10 @@ const Navbar = ({ setShouldOpenNavbar }) => {
         </div>
       </div>
       <div
-        className={`text-[#3E5060] font-bold ${
-          location.pathname == "/installation" ? "text-[#0072E5] " : ""
+        className={` font-bold ${
+          location.pathname == "/installation"
+            ? "text-[#0072E5] "
+            : "text-[#3E5060]"
         }`}
       >
         <Link to="/installation">
@@ -42,8 +44,8 @@ const Navbar = ({ setShouldOpenNavbar }) => {
         </Link>
       </div>
       <div
-        className={`text-[#3E5060] font-bold ${
-          location.pathname == "/skeleton" ? "text-[#0072E5]" : ""
+        className={` font-bold ${
+          location.pathname == "/skeleton" ? "text-[#0072E5]" : "text-[#3E5060]"
         }`}
       >
         <Link to="/skeleton">
@@ -58,8 +60,8 @@ const Navbar = ({ setShouldOpenNavbar }) => {
         </Link>
       </div>
       <div
-        className={`text-[#3E5060] font-bold ${
-          location.pathname == "/modal" ? "text-[#0072E5]" : ""
+        className={` font-bold ${
+          location.pathname == "/modal" ? "text-[#0072E5]" : "text-[#3E5060]"
         }`}
       >
         <Link to="/modal">
