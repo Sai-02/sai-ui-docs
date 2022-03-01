@@ -1,4 +1,5 @@
 import React from "react";
+import ModalBackgroundScrollExample from "./ModalBackgroundScrollExample/ModalBackgroundScrollExample";
 import ModalFullScreenExample from "./ModalFullScreenExample";
 import ModalSimpleExample from "./ModalSimpleExample";
 const ModalPage = () => {
@@ -17,6 +18,8 @@ const ModalPage = () => {
       <ModalSimpleExample />
       {/* Full Screen Modal */}
       <ModalFullScreenExample />
+      {/* Background Scroll Example */}
+      <ModalBackgroundScrollExample />
     </div>
   );
 };
