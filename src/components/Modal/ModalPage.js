@@ -1,4 +1,5 @@
 import React from "react";
+import ModalFullScreenExample from "./ModalFullScreenExample";
 import ModalSimpleExample from "./ModalSimpleExample";
 const ModalPage = () => {
   return (
@@ -14,6 +15,8 @@ const ModalPage = () => {
       </p>
       {/* Simple Modal Example */}
       <ModalSimpleExample />
+      {/* Full Screen Modal */}
+      <ModalFullScreenExample />
     </div>
   );
 };
