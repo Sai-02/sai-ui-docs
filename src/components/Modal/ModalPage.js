@@ -1,4 +1,5 @@
 import React from "react";
+import ModalBackgroundColorExample from "./ModalBackgroundColorExample/ModalBackgroundColorExample";
 import ModalBackgroundScrollExample from "./ModalBackgroundScrollExample/ModalBackgroundScrollExample";
 import ModalFullScreenExample from "./ModalFullScreenExample";
 import ModalProps from "./ModalProps";
@@ -21,6 +22,8 @@ const ModalPage = () => {
       <ModalFullScreenExample />
       {/* Background Scroll Example */}
       <ModalBackgroundScrollExample />
+      {/* Background Color Change Example */}
+      <ModalBackgroundColorExample />
       {/* Modal Props */}
       <ModalProps />
     </div>
