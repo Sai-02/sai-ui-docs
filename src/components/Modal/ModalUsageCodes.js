@@ -147,7 +147,7 @@ export default ExampleCode;
 
 `;
 export const modalBackgroundColorExample = `
- import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Modal } from "sai-ui";
