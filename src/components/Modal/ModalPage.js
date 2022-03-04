@@ -1,6 +1,7 @@
 import React from "react";
 import ModalBackgroundColorExample from "./ModalBackgroundColorExample/ModalBackgroundColorExample";
 import ModalBackgroundScrollExample from "./ModalBackgroundScrollExample/ModalBackgroundScrollExample";
+import ModalCloseOnFocusRemove from "./ModalCloseOnFocusRemove/ModalCloseOnFocusRemove";
 import ModalFullScreenExample from "./ModalFullScreenExample";
 import ModalProps from "./ModalProps";
 import ModalSimpleExample from "./ModalSimpleExample";
@@ -24,6 +25,8 @@ const ModalPage = () => {
       <ModalBackgroundScrollExample />
       {/* Background Color Change Example */}
       <ModalBackgroundColorExample />
+      {/* Modal Close on Focus Remove */}
+      <ModalCloseOnFocusRemove />
       {/* Modal Props */}
       <ModalProps />
     </div>
