@@ -8,16 +8,17 @@ import {
 } from "react-router-dom";
 import Installation from "./components/Installation/Installation";
 import SkeletonPage from "./components/SkeletonPage/SkeletonPage";
+import ModalPage from "./components/Modal/ModalPage";
 import { useState } from "react";
 function App() {
   const [shouldOpenNavbar, setShouldOpenNavbar] = useState(false);
   return (
     <Router>
-      <div className="">
+      <div className="min-h-screen flex flex-col">
         <Header setShouldOpenNavbar={setShouldOpenNavbar} />
-        <div className="grid lg:grid-cols-12">
+        <div className="grid lg:grid-cols-12 grow">
           <div
-            className={`absolute z-10  bg-white w-[40%] lg:w-full lg:static lg:col-span-2 border min-h-screen h-full ${
+            className={`absolute z-10  bg-white w-[40%] lg:w-full lg:static lg:col-span-2 border h-full ${
               shouldOpenNavbar ? "" : "hidden"
             } lg:block`}
           >
@@ -32,6 +33,7 @@ function App() {
             <Routes>
               <Route path="/installation" element={<Installation />} />
               <Route path="/skeleton" element={<SkeletonPage />} />
+              <Route path="/modal" element={<ModalPage />} />
               <Route path="/" exact element={<Navigate to="/installation" />} />
             </Routes>
           </div>
