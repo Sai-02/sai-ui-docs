@@ -35,6 +35,23 @@ const ModalProps = () => {
               </td>
             </tr>
             <tr className="grid grid-cols-7 gap-6 px-2">
+              <td className="col-span-2">closeOnFocusRemove</td>
+              <td className="col-span-1">boolean</td>
+              <td className="col-span-4">
+                It is used to close modal whenever user clicks outside the
+                modal. Note: while adding this props, you also have to pass
+                onClose prop.
+              </td>
+            </tr>
+            <tr className="grid grid-cols-7 gap-6 px-2">
+              <td className="col-span-2">onClose</td>
+              <td className="col-span-1">function</td>
+              <td className="col-span-4">
+                It takes the function which closes the modal. It is mandatory to
+                use when you want to close modal on focus remove
+              </td>
+            </tr>
+            <tr className="grid grid-cols-7 gap-6 px-2">
               <td className="col-span-2">customStyles</td>
               <td className="col-span-1">Object</td>
               <td className="col-span-4">
