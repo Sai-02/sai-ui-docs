@@ -1,22 +1,16 @@
-import React, { useState } from "react";
-import { Alert } from "sai-ui";
+import React from "react";
+import AlertSimpleExample from "./AlertSimpleExample/AlertSimpleExample";
 const AlertPage = () => {
-  const [openAlert, setOpenAlert] = useState(false);
-  const closeAlert = () => {
-    setOpenAlert(false);
-  };
   return (
-    <div className="">
-      <Alert type={"success"} open={openAlert} closeAlert={closeAlert}>
-        Hi this i a alert
-      </Alert>
-      <button
-        onClick={() => {
-          setOpenAlert(true);
-        }}
-      >
-        Click me
-      </button>
+    <div className="px sm:px-2 lg:px-4 w-full">
+      <h1 className="text-3xl font-bold">Alert</h1>
+      <p className="mt-4 text-xl font-normal">
+        It displays short important message in such a way that it does not
+        disturbs user's current task.
+      </p>
+
+      {/* Alert Simple Example */}
+      <AlertSimpleExample />
     </div>
   );
 };
