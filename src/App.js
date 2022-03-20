@@ -9,6 +9,7 @@ import {
 import Installation from "./components/Installation/Installation";
 import SkeletonPage from "./components/SkeletonPage/SkeletonPage";
 import ModalPage from "./components/Modal/ModalPage";
+import AlertPage from "./components/Alert/AlertPage";
 import { useState } from "react";
 function App() {
   const [shouldOpenNavbar, setShouldOpenNavbar] = useState(false);
@@ -34,6 +35,7 @@ function App() {
               <Route path="/installation" element={<Installation />} />
               <Route path="/skeleton" element={<SkeletonPage />} />
               <Route path="/modal" element={<ModalPage />} />
+              <Route path="/alert" element={<AlertPage />} />
               <Route path="/" exact element={<Navigate to="/installation" />} />
             </Routes>
           </div>

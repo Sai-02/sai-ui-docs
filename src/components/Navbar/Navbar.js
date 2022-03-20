@@ -75,6 +75,22 @@ const Navbar = ({ setShouldOpenNavbar }) => {
           </span>
         </Link>
       </div>
+      <div
+        className={` font-bold ${
+          location.pathname == "/alert" ? "text-[#0072E5]" : "text-[#3E5060]"
+        }`}
+      >
+        <Link to="/alert">
+          <span
+            className=""
+            onClick={() => {
+              closeNavbar();
+            }}
+          >
+            Alert
+          </span>
+        </Link>
+      </div>
     </nav>
   );
 };
