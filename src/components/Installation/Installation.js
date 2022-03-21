@@ -1,6 +1,8 @@
 import React from "react";
+import useChangeTitle from "../../customHooks/useChangeTitle";
 
 const Installation = () => {
+  useChangeTitle("Sai-UI : Installation");
   return (
     <div className="px-4 w-full">
       <h1 className="text-3xl font-bold ">Installation</h1>

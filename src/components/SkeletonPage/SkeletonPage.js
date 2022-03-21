@@ -4,7 +4,9 @@ import SkeletonVariants from "./SkeletonVariants";
 import SkeletonCustomLayouts from "./SkeletonCustomLayouts";
 import { usageCode } from "./SkeletonCode";
 import SkeletonProps from "./SkeletonProps";
+import useChangeTitle from "../../customHooks/useChangeTitle";
 const SkeletonPage = () => {
+  useChangeTitle("Skeleton Component");
   return (
     <div className="px sm:px-2 lg:px-4 w-full">
       <h1 className="text-3xl font-bold">Skeleton</h1>

@@ -1,4 +1,5 @@
 import React from "react";
+import useChangeTitle from "../../customHooks/useChangeTitle";
 import ModalBackgroundColorExample from "./ModalBackgroundColorExample/ModalBackgroundColorExample";
 import ModalBackgroundScrollExample from "./ModalBackgroundScrollExample/ModalBackgroundScrollExample";
 import ModalCloseOnFocusRemove from "./ModalCloseOnFocusRemove/ModalCloseOnFocusRemove";
@@ -6,6 +7,7 @@ import ModalFullScreenExample from "./ModalFullScreenExample";
 import ModalProps from "./ModalProps";
 import ModalSimpleExample from "./ModalSimpleExample";
 const ModalPage = () => {
+  useChangeTitle("Modal Component");
   return (
     <div className="px sm:px-2 lg:px-4 w-full">
       <h1 className="text-3xl font-bold">Modal</h1>
