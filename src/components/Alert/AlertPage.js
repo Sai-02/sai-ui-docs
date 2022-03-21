@@ -1,5 +1,6 @@
 import React from "react";
 import AlertSimpleExample from "./AlertSimpleExample/AlertSimpleExample";
+import AlertVariantsExample from "./AlertVariantsExample.js/AlertVariantsExample";
 const AlertPage = () => {
   return (
     <div className="px sm:px-2 lg:px-4 w-full">
@@ -11,6 +12,8 @@ const AlertPage = () => {
 
       {/* Alert Simple Example */}
       <AlertSimpleExample />
+      {/* Alert Variants Example */}
+      <AlertVariantsExample />
     </div>
   );
 };
